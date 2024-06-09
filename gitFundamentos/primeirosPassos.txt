@@ -2,6 +2,10 @@ Instalar o Git na máquina
 
 comandos:
 
+git config --local -e: editar as configurações locais do repositorio
+
+git config --global -e: editar as configurações globais do usuario
+
 git config --global user.email: adiciona sua identificação/email
 
 git config --global user.name: adiciona sua identificação/nome
