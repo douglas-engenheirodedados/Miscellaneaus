@@ -1,0 +1,26 @@
+Instalar o Git na máquina
+
+comandos:
+
+git config --global user.email: adiciona sua identificação/email
+
+git config --global user.name: adiciona sua identificação/nome
+
+git init: inicia a controle de versão
+
+git status: mostra o status da branch
+
+git add: use o comando git add . ou git add <nome_do_arquivo/pasta> para iniciar o trackeamento das alterações.
+Esse comando insere o arquivo na area de stage.
+
+git commit -m "mensagem": commitar os códigos/alterações para a branch
+
+git log: apresenta em tela os logs de alterações. O commit cria um hash que representa o ponto exato da alteração.
+
+git restore --stage <nome_do_arquivo>: caso tenha feito alguma mudança que deseje desfazer ates de efetuar o git add.
+Esse comando tira o arquivo da area de stage e volta para a area de alteração.
+sem o parametro --stage, apenas com o nome do arquivo, reinicie o status original do arquivo.
+
+git reset --hard <hash do commit>: use esse comando se precisar restaurar uma versão do commit anterior.
+
+git reset --soft <hash do commit>: retorna os ultimos arquivos para a area de stage
