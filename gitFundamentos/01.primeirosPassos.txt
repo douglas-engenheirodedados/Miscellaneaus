@@ -2,6 +2,8 @@ Instalar o Git na máquina
 
 comandos:
 
+git clone: copia uma respositorio remoto para a sua maquina local
+
 git config --local -e: editar as configurações locais do repositorio
 
 git config --global -e: editar as configurações globais do usuario
