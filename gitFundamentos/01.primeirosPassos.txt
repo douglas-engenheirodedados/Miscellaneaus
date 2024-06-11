@@ -2,6 +2,10 @@ Instalar o Git na máquina
 
 comandos:
 
+git init: inicia um repositorio novo
+
+git config --global init.defaultBranch main: use esse comando para sempre inicializar uma branch nova com o nome "main"
+
 git clone: copia uma respositorio remoto para a sua maquina local
 
 git config --local -e: editar as configurações locais do repositorio
