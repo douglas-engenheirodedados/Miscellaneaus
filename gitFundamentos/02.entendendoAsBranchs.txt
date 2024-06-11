@@ -1,1 +1,3 @@
+- branchs são ramificações do projeto.
+- branchs são usadas para replicar o ambiente principal (main) para criar um ambiente novo para o desenvolvimento.
 
