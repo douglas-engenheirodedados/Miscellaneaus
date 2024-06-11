@@ -10,3 +10,5 @@ git branch
 trocando as branchs:
 git checkout <nome_da_branch>
 obs: não é possível trocar de branch caso tenha alterações não commitadas
+
+git checkout -: retorna para a ultima branch
