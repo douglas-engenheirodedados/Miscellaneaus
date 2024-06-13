@@ -34,3 +34,6 @@ sem o parametro --stage, apenas com o nome do arquivo, reinicie o status origina
 git reset --hard <hash do commit>: use esse comando se precisar restaurar uma versão do commit anterior.
 
 git reset --soft <hash do commit>: retorna os ultimos arquivos para a area de stage
+
+
+--------
