@@ -12,3 +12,7 @@ git checkout <nome_da_branch>
 obs: não é possível trocar de branch caso tenha alterações não commitadas
 
 git checkout -: retorna para a ultima branch
+
+merge entre as branchs:
+Para trazer o conteudo novo da nova branch mude para a branch "main" e use o comando:
+git merge <nome_da_branch_que_quer_trazer>
