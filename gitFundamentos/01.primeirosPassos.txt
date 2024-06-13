@@ -35,5 +35,7 @@ git reset --hard <hash do commit>: use esse comando se precisar restaurar uma ve
 
 git reset --soft <hash do commit>: retorna os ultimos arquivos para a area de stage
 
+git branch: lista as branchs
 
+git branch -a: lista as branchs locais e remotas
 --------
