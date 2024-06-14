@@ -38,4 +38,6 @@ git reset --soft <hash do commit>: retorna os ultimos arquivos para a area de st
 git branch: lista as branchs
 
 git branch -a: lista as branchs locais e remotas
+
+git branch -D <nome_da_branch>: deleta a branch
 --------
