@@ -1,0 +1,8 @@
+git log --oneline: mostro os logs de commit em apenas uma linha
+git reflog: historico de commits
+**utilize o reflog para vizualizar todos o historico de commits e voltar para uma versao anterior utlizando git reset **
+
+git rebase -i HEAD~<numero_de_commits>: utilize o git rebase para manipular a arvores de commits, como por exemplo unificar 2 ou mais commits em um so 
+
+git cherry-pick: utilize o comando git cherry-pick para trazer um commit especifico para o seu commit atual
+
