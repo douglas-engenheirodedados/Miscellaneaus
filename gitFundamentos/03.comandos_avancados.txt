@@ -6,3 +6,19 @@ git rebase -i HEAD~<numero_de_commits>: utilize o git rebase para manipular a ar
 
 git cherry-pick: utilize o comando git cherry-pick para trazer um commit especifico para o seu commit atual
 
+git stash: utilize o git stash para mover um arquivo que foi alterado na branch errada, por exemplo:
+criou o arquivo A na branch B e precisa move-lo para a branch A, siga os passos:
+git add <arquivo que quer mover>
+git stash
+troque para a brancj correta
+git stash pop
+
+--> para fazer o stash com arquivos que nao estao trackeados:
+git stash -u 
+
+--> quando voce tem 2 ou mais arquivos na area de stash, usa o comando git stash apply stash@{<posicao>} para adicionar 
+individualmente na sua branch  
+--> para deleter: git stash drop stash@{<posicao>}
+
+--> para gravar com uma mensagem de identificação: git stash save "consulta do tipo b"
+--> para arquivos não trackeados: git stash save --include-untracked "arquivo do app b"
