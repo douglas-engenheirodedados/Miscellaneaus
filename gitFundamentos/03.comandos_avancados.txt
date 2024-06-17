@@ -27,3 +27,7 @@ individualmente na sua branch
 git log --oneline --graph: para mostrar o log com o gráfico da arvore de commits
 
 git revert <hash_do_commit>: faz a reversão do commit
+
+git clean: limpa a área de desenvolvimento
+
+git restore: restaura arquivo deletados que ainda não foram trackeados
