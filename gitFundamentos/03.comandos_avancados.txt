@@ -43,3 +43,9 @@ git tag <nome_da_tag>: cria uma tag
 git show: mostr as infos da tag
 
 git show <nome_da_tag>: moostra as info da tag  especifica
+
+git tag <nome_da_tag> #hash: associa uma tag a um commit especifico
+
+git tag -d <nome_da_tag>: deleta a tag 
+
+git tag -a <nome_da_tag> -m ¨mensagem¨: adiciona mensagem na tag
