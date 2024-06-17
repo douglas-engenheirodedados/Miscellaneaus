@@ -31,3 +31,15 @@ git revert <hash_do_commit>: faz a reversão do commit
 git clean: limpa a área de desenvolvimento
 
 git restore: restaura arquivo deletados que ainda não foram trackeados
+
+git branch -D <nome_da_branch>: deleta a branch
+
+git checkout -b <nome_da_branch> #hash: cria uma nova branch a partir do commit informado
+
+git checkout --orphan <nome_da_branch>: cria uma branch sem historico
+
+git tag <nome_da_tag>: cria uma tag
+
+git show: mostr as infos da tag
+
+git show <nome_da_tag>: moostra as info da tag  especifica
