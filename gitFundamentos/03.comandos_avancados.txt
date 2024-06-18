@@ -49,3 +49,25 @@ git tag <nome_da_tag> #hash: associa uma tag a um commit especifico
 git tag -d <nome_da_tag>: deleta a tag 
 
 git tag -a <nome_da_tag> -m ¨mensagem¨: adiciona mensagem na tag
+
+git diff: mostra a diferença do que esta sendo feito no momento
+--stat: visão simplificada
+*mostra apenas arquivos trackeados
+
+git add -N <nome_do_arquivo>: trackeaia o arquivo, mas não adiciona na area de stage
+
+git diff --stat --staged: mostra as diff dos arquivos na area de stage
+
+git blame <nome_do_arquivo>: mostra linha por minha a alteração que foi feita
+
+git bisect start: inicia a busca binaria por problemas
+
+git bisect bad <hash_do_commit>: informa qual o commit ruim (inicio da checagem)
+
+git bisect good <hash_do_commit: informa qual o commit bom (fim da checagem)
+
+**valide os commites um a um e marque os commits como bom e ruim 
+marque o commit como ruim ou bom:
+git bisect good / git bisect bad
+
+git bisect reset: finaliza a busca binaria
