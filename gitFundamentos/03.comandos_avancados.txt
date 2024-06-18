@@ -71,3 +71,14 @@ marque o commit como ruim ou bom:
 git bisect good / git bisect bad
 
 git bisect reset: finaliza a busca binaria
+
+git merge --allow-unrelated-histories <nome_da_branch>: permite merge com historicos não relacionados
+
+Se ocorrer conflito de merge, para continuar:
+-> se corrigiu o conflito: git merge --continue
+-> se não quiser resolver agora: git merge --abort
+
+apontando um repo local para um repo remoto:
+git remote add origin <link>
+
+git push -u origin <nome_da_branch>: envia as alterações pro remoto
