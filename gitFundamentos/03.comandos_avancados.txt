@@ -82,3 +82,11 @@ apontando um repo local para um repo remoto:
 git remote add origin <link>
 
 git push -u origin <nome_da_branch>: envia as alterações pro remoto
+
+git push origin --tags: envia as tags
+
+git pull: atualiza o repo local com o remote (fetch && merge)
+
+git fetch: atualiza o local com o remoto
+
+git fetch --prune: atualize a lista de branchs remotas
