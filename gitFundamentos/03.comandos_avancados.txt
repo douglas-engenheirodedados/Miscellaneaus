@@ -1,0 +1,92 @@
+git log --oneline: mostro os logs de commit em apenas uma linha
+git reflog: historico de commits
+**utilize o reflog para vizualizar todos o historico de commits e voltar para uma versao anterior utlizando git reset **
+
+git rebase -i HEAD~<numero_de_commits>: utilize o git rebase para manipular a arvores de commits, como por exemplo unificar 2 ou mais commits em um so 
+
+git cherry-pick: utilize o comando git cherry-pick para trazer um commit especifico para o seu commit atual
+
+git stash: utilize o git stash para mover um arquivo que foi alterado na branch errada, por exemplo:
+criou o arquivo A na branch B e precisa move-lo para a branch A, siga os passos:
+git add <arquivo que quer mover>
+git stash
+troque para a brancj correta
+git stash pop
+
+--> para fazer o stash com arquivos que nao estao trackeados:
+git stash -u 
+
+--> quando voce tem 2 ou mais arquivos na area de stash, usa o comando git stash apply stash@{<posicao>} para adicionar 
+individualmente na sua branch  
+--> para deleter: git stash drop stash@{<posicao>}
+
+--> para gravar com uma mensagem de identificação: git stash save "consulta do tipo b"
+--> para arquivos não trackeados: git stash save --include-untracked "arquivo do app b"
+
+
+git log --oneline --graph: para mostrar o log com o gráfico da arvore de commits
+
+git revert <hash_do_commit>: faz a reversão do commit
+
+git clean: limpa a área de desenvolvimento
+
+git restore: restaura arquivo deletados que ainda não foram trackeados
+
+git branch -D <nome_da_branch>: deleta a branch
+
+git checkout -b <nome_da_branch> #hash: cria uma nova branch a partir do commit informado
+
+git checkout --orphan <nome_da_branch>: cria uma branch sem historico
+
+git tag <nome_da_tag>: cria uma tag
+
+git show: mostr as infos da tag
+
+git show <nome_da_tag>: moostra as info da tag  especifica
+
+git tag <nome_da_tag> #hash: associa uma tag a um commit especifico
+
+git tag -d <nome_da_tag>: deleta a tag 
+
+git tag -a <nome_da_tag> -m ¨mensagem¨: adiciona mensagem na tag
+
+git diff: mostra a diferença do que esta sendo feito no momento
+--stat: visão simplificada
+*mostra apenas arquivos trackeados
+
+git add -N <nome_do_arquivo>: trackeaia o arquivo, mas não adiciona na area de stage
+
+git diff --stat --staged: mostra as diff dos arquivos na area de stage
+
+git blame <nome_do_arquivo>: mostra linha por minha a alteração que foi feita
+
+git bisect start: inicia a busca binaria por problemas
+
+git bisect bad <hash_do_commit>: informa qual o commit ruim (inicio da checagem)
+
+git bisect good <hash_do_commit: informa qual o commit bom (fim da checagem)
+
+**valide os commites um a um e marque os commits como bom e ruim 
+marque o commit como ruim ou bom:
+git bisect good / git bisect bad
+
+git bisect reset: finaliza a busca binaria
+
+git merge --allow-unrelated-histories <nome_da_branch>: permite merge com historicos não relacionados
+
+Se ocorrer conflito de merge, para continuar:
+-> se corrigiu o conflito: git merge --continue
+-> se não quiser resolver agora: git merge --abort
+
+apontando um repo local para um repo remoto:
+git remote add origin <link>
+
+git push -u origin <nome_da_branch>: envia as alterações pro remoto
+
+git push origin --tags: envia as tags
+
+git pull: atualiza o repo local com o remote (fetch && merge)
+
+git fetch: atualiza o local com o remoto
+
+git fetch --prune: atualize a lista de branchs remotas
