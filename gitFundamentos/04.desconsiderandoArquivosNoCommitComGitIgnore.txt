@@ -1,2 +1,4 @@
 Criar um arquivo com o nome de .gitignore para que o git ignore ele e não entre nos commits.
 log, dependencias, bibliotecas, compilação, são exemplos do que podem ser adicionados nesse arquivo.
+
+Adicione no arquivo o tipo de arquivo que voce deseja que seja ignorado, como por exemplo: *.log
