@@ -1,0 +1,10 @@
+Trunk-Based Development: novas branchs são criadas a partir da main, cada desenvolvedor cria sua branch e depois promove para main
+
+GitFlow: Além da branch main, existe uma branch com o nome develop que é um espelho da main e cada desenvolvedor desenvolve num branch chamada feature/
+Quando o desenvolvimento está finalizado, é enviado o commmit para a branch de dev.
+Antes de enviar para a main, existe uma camada intermediaria de release onde são rodados testes.
+
+Versionamento Semantico:
+Major: Mudanças novas / Mudanças incompatíveis com a atual / "Se mudou a Major, cuidado que seu código pode quebrar"
+Minor: Adicionadas funcionalidades
+Patch: Correção de erros

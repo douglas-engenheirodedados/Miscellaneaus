@@ -1,0 +1,9 @@
+Criar um arquivo com o nome de .gitignore para que o git ignore ele e não entre nos commits.
+log, dependencias, bibliotecas, compilação, são exemplos do que podem ser adicionados nesse arquivo.
+
+Adicione no arquivo o tipo de arquivo que voce deseja que seja ignorado, como por exemplo: *.log
+
+Voce pode adicionar no gitignore arquivos que já estão na sua branch, mas precisará retiralos na mão para 
+que  o git passe a ignora-lo.
+Para isso voce pode usar o seguinte comando:
+git rm --cached <nome_do_arquivo>
