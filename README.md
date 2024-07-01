@@ -4,6 +4,6 @@
 1. ~~Git Fundamentos~~
 2. Inteligência Artificial Aplicado ao CRM
 3. Contextualizando IA
-4. DBT
+4. ~~DBT~~
 
 
